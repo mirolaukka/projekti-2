@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<script type="text/javascript" src="scripts.js"></script>
+  	<title>Kyselylomake</title>
+	<link rel="stylesheet" href="tyyli.css">
+
+
+</head>
+
+<body>
+	
+	<h1 id="otsikko">
+		Kyselylomake
+	</h1>
+	<div>
+		<p id="kuvaus">
+		Lyhyt kyselylomake keudasta
+		</p>
+		<form id="kyselylomake" onsubmit="return checkForm(this)">
+			<p><b>Nimi:</b></p>
+			<textarea rows="2" cols="40" name="name" id="name">Kirjoita nimesi</textarea>
+			<p><b>Sähköposti:</b></p>
+			<textarea rows="2" cols="40" name="email" id="email">Kirjoita sähköpostiosoitteesi</textarea>
+			<p><b>Ikä:</b></p>
+			<textarea rows="2" cols="40" name="age" id="age">Kirjoita ikäsi</textarea>
+			<p><b>Mihin ryhmään kuulut?</b></p>
+			<select name="ryhmä">
+				<option>Opiskelija</option>
+				<option>Työssä</option>
+				<option>Työtön</option>
+				<option>Eläkeläinen</option>
+			</select>
+			<p><b>Suosittelisitko Keudaa ystävillesi?</b></p>
+			<input type="radio" name="rec" value="Kyllä"> Kyllä
+			<br>
+			<input type="radio" name="rec" value="En"> En
+			<br>
+			<input type="radio" name="rec" value="En osaa sanoa"> En osaa sanoa
+			<br>
+			<p><b>Parasta keudassa on:</b></p>
+			<input type="checkbox" name="parasta" value="Ammattiaineet"> Ammattiaineet
+			<br>
+			<input type="checkbox" name="parasta" value="YTÖ-Aineet"> YTÖ-Aineet
+			<br>
+			<input type="checkbox" name="parasta" value="Ruokatunti"> Ruokatunti
+			<br>
+			<p><b>Mikä on lempiaineesi Keudassa?</b></p>
+			<select name="lempiaine">
+				<option>Äidinkieli</option>
+				<option>Matematiikka</option>
+				<option>Fysiikka ja Kemia</option>
+				<option>Liikunta</option>
+			</select>
+			<textarea rows="5" cols="50" name="paranna_keuda">Kerro miten kehittäisit opetusta Keudassa</textarea>
+			<br>
+			<input type="submit" name="submitButton" value="Lähetä">
+
+
+			
+			
+		</form>
+	</div>
+	
+  	
+</body>
+</html>

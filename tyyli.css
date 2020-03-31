@@ -1,0 +1,37 @@
+textarea {
+	margin: 5px;
+	resize: none;
+}
+
+h1{
+	background: #b3c6ff;
+	max-width: 400px;
+	font-size: 35px;
+	padding: 20px;
+}
+
+form{
+	background: #0099e6;
+}
+
+p{
+	margin: 5px;
+	font-size: 20px;
+	color: white;
+}
+#kuvaus{
+	height: 50px;
+	margin: 0px;
+	font-size: 25px;
+	background: #0099e6;
+}
+
+select{
+	padding-left: 10px;
+}
+
+body{
+	width: 400px;
+	margin:auto;
+	background-image: url('https://wallpaperaccess.com/full/260170.png');
+}
